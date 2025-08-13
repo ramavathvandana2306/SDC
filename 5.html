@@ -1,0 +1,43 @@
+//use a switch statement that display day of the week based on the number//
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day Switch</title>
+</head>
+<body>
+    <button onclick="fact()">Click Me</button>
+    <h1 id="ide"></h1>
+    <script>
+        function fact(){
+            let a = prompt("Enter a number (1-7)");
+            switch(a){
+                case '1':
+                    document.getElementById("ide").innerHTML = "Mon";
+                    break;
+                case '2':
+                    document.getElementById("ide").innerHTML = "Tue";
+                    break;
+                case '3':
+                    document.getElementById("ide").innerHTML = "Wed";
+                    break;
+                case '4':
+                    document.getElementById("ide").innerHTML = "Thu";
+                    break;
+                case '5':
+                    document.getElementById("ide").innerHTML = "Fri";
+                    break;
+                case '6':
+                    document.getElementById("ide").innerHTML = "Sat";
+                    break;
+                case '7':
+                    document.getElementById("ide").innerHTML = "Sun";
+                    break;
+                default:
+                    document.getElementById("ide").innerHTML = "Invalid number!";
+            }
+        }
+    </script>
+</body>
+</html>
